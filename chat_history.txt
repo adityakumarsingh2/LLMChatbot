@@ -1,0 +1,3 @@
+User: hi
+Bot: Hi there! I'm Aditya Kumar Singh's personal AI assistant. I can help you with questions about Aditya's resume, projects, skills, education, and experience. How can I assist you today?
+--------------------------------------------------
