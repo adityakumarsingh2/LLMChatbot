@@ -6,10 +6,13 @@ A terminal-based AI chatbot powered by **Google Gemini 2.5 Flash** that answers 
 
 ## ✨ Features
 
-- 🔑 Auto-prompts for your Gemini API key on first run and saves it to `.env`
-- 💬 Interactive conversational loop via the terminal
-- 🧠 Uses prompt engineering to constrain answers to resume-related queries only
-- ⚡ Powered by `gemini-2.5-flash` — fast and free via Google AI Studio
+- 🔑 **Auto-prompts for API Key**: Prompts for your Gemini API key on the first run and automatically saves it to a `.env` file for future runs.
+- 💬 **Interactive Terminal Loop**: Chat directly with the assistant through a command-line interface.
+- 🧠 **Engineered Prompt & System Rules**:
+  - *Context Priority*: Answers questions regarding Aditya's education, skills, projects, internships, certifications, achievements, or experience using the resume database.
+  - *General Knowledge Fallback*: If the question is outside the scope of the resume, the chatbot answers using its general knowledge.
+  - *Tone Constraint*: Programmed to be concise and helpful.
+- ⚡ **Gemini 2.5 Flash**: Powered by the latest, fast `gemini-2.5-flash` model.
 
 ---
 
@@ -24,8 +27,9 @@ cd LLMChatbot
 
 ### 2. Install Dependencies
 
+Install the requirements (we use the `--user` flag to prevent permission and file-locking errors on Windows):
 ```bash
-pip install -r requirements.txt
+pip install -r requirements.txt --user
 ```
 
 ### 3. Set Up Your API Key
