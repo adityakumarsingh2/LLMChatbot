@@ -1,3 +1,43 @@
 User: hi
 Bot: Hi there! I'm Aditya Kumar Singh's personal AI assistant. I can help you with questions about Aditya's resume, projects, skills, education, and experience. How can I assist you today?
 --------------------------------------------------
+User: how are u?
+Bot: I am an AI assistant, so I don't have feelings, but I'm ready to help you! How can I assist you today?
+--------------------------------------------------
+User: okay, so tell me basics of cpp 
+Bot: C++ is a powerful, high-performance, general-purpose programming language developed by Bjarne Stroustrup as an extension of the C language.
+
+Here are some basics:
+
+*   **Paradigm:** It supports object-oriented programming (OOP), generic programming, and procedural programming.
+*   **Performance:** Known for its efficiency and control over system resources, making it popular for game development, operating systems, and high-performance applications.
+*   **Compilation:** C++ code is compiled into machine code, allowing direct execution by the CPU.
+*   **Basic Structure:**
+    ```cpp
+    #include <iostream> // Includes the iostream library for input/output operations
+
+    int main() { // The main function, where program execution begins
+        std::cout << "Hello, World!"; // Prints "Hello, World!" to the console
+        return 0; // Indicates successful program termination
+    }
+    ```
+*   **Variables & Data Types:** You declare variables with a type (e.g., `int`, `char`, `double`, `bool`) before using them.
+    ```cpp
+    int age = 30;
+    double price = 19.99;
+    char grade = 'A';
+    bool isActive = true;
+    ```
+*   **Input/Output:** `std::cout` is used for output, and `std::cin` for input.
+    ```cpp
+    std::cout << "Enter your name: ";
+    std::string name;
+    std::cin >> name;
+    std::cout << "Hello, " << name << "!" << std::endl;
+    ```
+*   **Control Flow:** C++ uses standard control structures like `if-else`, `for` loops, `while` loops, and `switch` statements.
+*   **Functions:** You can define functions to encapsulate reusable blocks of code.
+*   **Memory Management:** C++ offers direct memory management capabilities (e.g., using `new` and `delete`), which provides flexibility but also requires careful handling.
+
+Aditya Kumar Singh lists C/C++ in his skills, indicating familiarity with these concepts.
+--------------------------------------------------

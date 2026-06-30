@@ -22,25 +22,13 @@ git clone https://github.com/adityakumarsingh2/LLMChatbot.git
 cd LLMChatbot
 ```
 
-### 2. Create a Virtual Environment (Recommended)
-
-```bash
-python -m venv .venv
-
-# On Windows:
-.venv\Scripts\activate
-
-# On macOS/Linux:
-source .venv/bin/activate
-```
-
-### 3. Install Dependencies
+### 2. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Set Up Your API Key
+### 3. Set Up Your API Key
 
 Get a **free** Gemini API key from [Google AI Studio](https://aistudio.google.com/).
 
@@ -51,7 +39,7 @@ You can either:
   ```
 - Or just **run the chatbot** — it will prompt you to enter the key and save it automatically.
 
-### 5. Run the Chatbot
+### 4. Run the Chatbot
 
 ```bash
 python chatbot.py

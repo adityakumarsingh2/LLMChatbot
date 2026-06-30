@@ -143,12 +143,14 @@ while True:
     if not question.strip():
         continue
         
-    # Constructing prompt according to Slide 12 instructions (Prompt Engineering)
+    # Injected prompt with custom rules
     prompt = f"""
-You are Aditya Kumar Singh's personal AI assistant.
-Use ONLY the information below to answer questions. If the question cannot be
-answered using the provided information, politely state that you can only answer 
-questions about Aditya's resume, projects, skills, education, and experience.
+You are Aditya Kumar Singh's Personal AI Assistant.
+
+Rules:
+1. If the question is about Aditya Kumar Singh's education, skills, projects, internships, certifications, achievements, or experience, use the information provided below.
+2. If the answer is not present in the provided information, answer using your general knowledge.
+3. Be concise and helpful.
 
 Information:
 {my_data}
