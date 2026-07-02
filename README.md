@@ -1,18 +1,24 @@
-# 🤖 LLM Chatbot — Aditya Kumar Singh's AI Resume Chatbot
+# 🤖 LLM Chatbot — Aditya Kumar Singh's AI Resume Assistant
 
-A terminal-based AI chatbot powered by **Google Gemini 2.5 Flash** that answers questions about Aditya Kumar Singh's resume, skills, projects, and experience.
+A modern AI chatbot application featuring both a terminal interface and a stunning Streamlit web application. Powered by **Google Gemini 2.5 Flash**, it is designed to interactively answer questions about Aditya Kumar Singh's resume, skills, projects, and professional experience.
 
 ---
 
 ## ✨ Features
 
-- 🔑 **Auto-prompts for API Key**: Prompts for your Gemini API key on the first run and automatically saves it to a `.env` file for future runs.
-- 💬 **Interactive Terminal Loop**: Chat directly with the assistant through a command-line interface.
-- 🧠 **Engineered Prompt & System Rules**:
-  - *Context Priority*: Answers questions regarding Aditya's education, skills, projects, internships, certifications, achievements, or experience using the resume database.
-  - *General Knowledge Fallback*: If the question is outside the scope of the resume, the chatbot answers using its general knowledge.
-  - *Tone Constraint*: Programmed to be concise and helpful.
-- ⚡ **Gemini 2.5 Flash**: Powered by the latest, fast `gemini-2.5-flash` model.
+### 🌐 Web Application Interface (Streamlit Upgrade)
+- 🎨 **Premium Aesthetics**: Styled with a custom font (`Outfit`), linear purple-pink headers, and interactive elements.
+- 🧊 **Glassmorphism Sidebar**: Premium glassmorphic panel detailing a quick biography, active developer profile, and social links.
+- 🔑 **Dynamic Configuration**: Seamlessly loads your `GEMINI_API_KEY` from the environment/`.env` file, with a clean interactive password input fallback in the sidebar if not set.
+- 💬 **Interactive Chat Interface**: Styled chat bubbles with subtle hover animations, handling chat history natively in `st.session_state`.
+
+### 💻 Terminal Command Line Interface (CLI)
+- 🔑 **Auto-prompts for API Key**: Prompts for your Gemini API key on the first run and saves it to a local `.env` file automatically.
+- 💬 **Interactive Terminal Loop**: Direct connection and messaging loop via standard console output.
+
+### 🧠 Under the Hood
+- 🚀 **Gemini 2.5 Flash**: Leverages Google's latest fast, cost-efficient `gemini-2.5-flash` model.
+- 🛡️ **Engineered Prompt Constraints**: Custom rules ensuring context priority, fallback responses for general questions, and a helpful, concise tone.
 
 ---
 
@@ -93,10 +99,11 @@ LLMChatbot/
 
 | Tool | Purpose |
 |------|---------|
-| Python | Core language |
-| Google Gemini 2.5 Flash | LLM backend |
-| `google-genai` | Google GenAI SDK |
-| `python-dotenv` | Environment variable management |
+| Python | Core backend programming language |
+| Streamlit | Modern responsive web application framework |
+| Google Gemini 2.5 Flash | Large Language Model (LLM) backend |
+| `google-genai` | Official Google GenAI SDK |
+| `python-dotenv` | Automatic environment variable loading |
 
 ---
 

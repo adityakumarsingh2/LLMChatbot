@@ -97,21 +97,13 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # ----------------------------
-# Sidebar Configuration & Resume Options
+# Sidebar Configuration & Profile
 # ----------------------------
 with st.sidebar:
     st.markdown('<div class="sidebar-card">', unsafe_allow_html=True)
     st.image("https://img.icons8.com/color/96/artificial-intelligence.png", width=70)
     st.subheader("Configuration Panel")
     st.markdown('</div>', unsafe_allow_html=True)
-
-    # Allow toggling between Aditya and Mukund Kumar
-    profile = st.selectbox(
-        "Choose Resume Assistant Profile",
-        ["Aditya Kumar Singh (Default)", "Mukund Kumar (Tutorial Profile)"]
-    )
-    
-    st.markdown("---")
 
     # API Key check and input fallback
     # Look for API key in env or .env file first
@@ -129,12 +121,19 @@ with st.sidebar:
 
     st.markdown("---")
     st.markdown("### Profile Summary")
+    st.markdown("""
+    **Name**: Aditya Kumar Singh  
+    **Role**: Full-Stack Developer  
+    **Skills**: React.js, Node.js, C++, Java  
+    
+    [LinkedIn](https://linkedin.com/in/adityakumarsingh2) | [GitHub](https://github.com/adityakumarsingh2)
+    """)
 
 # ----------------------------
 # 2. Resume Data Configuration
 # ----------------------------
 # Resume Data for Aditya Kumar Singh
-aditya_data = """
+my_data = """
 ==================================================================
 RESUME OF ADITYA KUMAR SINGH
 ==================================================================
@@ -212,56 +211,8 @@ EDUCATION:
    - Duration: Apr 2020 - Mar 2021
 """
 
-# Resume Data for Mukund Kumar
-mukund_data = """
-==================================================================
-RESUME OF MUKUND KUMAR
-==================================================================
-
-CONTACT DETAILS:
-- Name: Mukund Kumar
-- Email: mukund.kumar@example.com
-- Mobile: +91 9876543210
-- LinkedIn: linkedin.com/in/mukundkumar
-- GitHub: github.com/mukundkumar
-
-SKILLS:
-- Languages: Python, JavaScript, HTML/CSS, SQL
-- Frameworks & Libraries: Streamlit, FastAPI, React
-- Tools & Platforms: Git, Docker, Google Cloud Platform (GCP)
-- Areas of Interest: Artificial Intelligence, Web Development, Data Science
-
-EXPERIENCE & PROJECTS:
-1. AI Research Intern | TechCorp (2025 - Present)
-   - Built several NLP-based chatbot assistants and document analysis tools.
-   - Deployed LLM pipelines using FastAPI and Streamlit.
-2. Web Developer | Freelance
-   - Designed responsive portfolio websites and simple dashboards.
-"""
-
-# Determine selected profile details
-if profile.startswith("Aditya"):
-    my_data = aditya_data
-    profile_name = "Aditya Kumar Singh"
-    page_title_heading = "Aditya AI Resume Assistant"
-    st.sidebar.markdown(f"""
-    **Name**: Aditya Kumar Singh  
-    **Role**: Full-Stack Developer  
-    **Skills**: React.js, Node.js, C++, Java  
-    
-    [LinkedIn](https://linkedin.com/in/adityakumarsingh2) | [GitHub](https://github.com/adityakumarsingh2)
-    """)
-else:
-    my_data = mukund_data
-    profile_name = "Mukund Kumar"
-    page_title_heading = "Mukund AI Resume Assistant"
-    st.sidebar.markdown(f"""
-    **Name**: Mukund Kumar  
-    **Role**: AI & Web Developer  
-    **Skills**: Python, Streamlit, FastAPI  
-    
-    [LinkedIn](https://linkedin.com/in/mukundkumar) | [GitHub](https://github.com/mukundkumar)
-    """)
+profile_name = "Aditya Kumar Singh"
+page_title_heading = "Aditya AI Resume Assistant"
 
 # ----------------------------
 # 3. Page Header
