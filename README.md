@@ -45,8 +45,17 @@ You can either:
 
 ### 4. Run the Chatbot
 
+You can run either the terminal-based chatbot or the modern Streamlit web application:
+
+#### Terminal-based Chatbot
 ```bash
 python chatbot.py
+```
+
+#### Streamlit Web Application (Premium Interface)
+```bash
+# Run the Streamlit app
+streamlit run app.py
 ```
 
 ---
@@ -70,7 +79,8 @@ Bot: Goodbye!
 
 ```
 LLMChatbot/
-├── chatbot.py          # Main chatbot script
+├── app.py              # Streamlit Web App (Premium Interface)
+├── chatbot.py          # Terminal-based chatbot script
 ├── requirements.txt    # Python dependencies
 ├── .gitignore          # Git ignore rules
 ├── .env                # Your API key (NOT committed to git)
